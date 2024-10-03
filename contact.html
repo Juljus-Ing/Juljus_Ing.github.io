@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.js"></script>
+    <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="/images/FotoBlanco.jpg" type="image/jpg" />
+    <title>Julian Naranjo's Portfolio</title>
+  </head>
+  <body>
+    <div class="hero-header">
+      <div class="wrapper">
+        <header>
+          <div>
+            <a href="index.html" class="logo">
+                <i class="fa-solid fa-j"></i>
+                <div class="logo-text">Julian Naranjo</div>
+            </a>
+          </div>
+          <nav>
+            <div class="togglebtn">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <ul class="navlinks">
+              <li><a href="index.html">Inicio</a></li>
+              <li><a href="#">Portfolio</a></li>
+              <li><a href="#">CV</a></li>
+              <li><a href="contact.html">Contacto</a></li>
+            </ul>
+          </nav>
+        </header>
+    </div>
+
+    <section>
+      <div class="contactForm">
+        <div class="form">
+          <div class="texto">
+            <h2>¡Hablemos!</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum nobis dolorem beatae tenetur voluptate libero voluptatem molestiae veniam nostrum, quod consequatur, quae dignissimos et placeat? Facilis doloribus quasi ullam soluta!
+            </p>
+          </div>
+          <form action="">
+            <div class="inputBox">
+              <label for="">Nombre: </label>
+              <input type="text" placeholder="Nombre...">
+            </div>
+            <div class="inputBox">
+              <label for="">Email: </label>
+              <input type="email" placeholder="Email...">
+            </div>
+            <div class="inputBox">
+              <label for="">Mensaje: </label>
+              <textarea name="" id="" cols="30" rows="5" placeholder="Dejame saber tu inquietud..."></textarea>
+            </div>
+            <input type="submit" value="Enviar">
+          </form>
+        </div>
+
+        <div class="info">
+          <div class="imgBox">
+            <img src="images/code.avif" alt="">
+          </div>
+          <div class="textBox">
+            <div class="infoContact">
+              <ion-icon name="map"></ion-icon> <p>Bogotá, Colombia</p>
+            </div>
+            <div class="infoContact">
+              <ion-icon name="call"></ion-icon> <p>+57 312 555 5523</p>
+            </div>
+            <div class="infoContact">
+              <ion-icon name="mail"></ion-icon> <p>ing.julian.naranjo@gmail.com</p>
+            </div> 
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script>
+        var togglebtn = document.querySelector(".togglebtn");
+        var nav = document.querySelector(".navlinks");
+        var links = document.querySelector(".navlinks li");
+
+        togglebtn.addEventListener("click", function(){
+            this.classList.toggle("click");
+            nav.classList.toggle("open");
+        })
+    </script>
+  </body>
+</html>

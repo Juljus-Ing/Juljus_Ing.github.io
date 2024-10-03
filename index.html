@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.js"></script>
+    <link rel="icon" href="/images/FotoBlanco.jpg" type="image/jpg" />
+    <title>Julian Naranjo's Portfolio</title>
+  </head>
+  <body>
+    <div class="hero-header">
+      <div class="wrapper">
+        <header>
+          <div>
+            <a href="index.html" class="logo">
+                <i class="fa-solid fa-j"></i>
+                <div class="logo-text">Julian Naranjo</div>
+            </a>
+          </div>
+          <nav>
+            <div class="togglebtn">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <ul class="navlinks">
+              <li><a href="index.html">Inicio</a></li>
+              <li><a href="#">Portfolio</a></li>
+              <li><a href="#">CV</a></li>
+              <li><a href="contact.html">Contacto</a></li>
+            </ul>
+          </nav>
+        </header>
+        <div class="container">
+          <div class="hero-pic">
+            <img src="images/foto_2.jpg" alt="profile pic" />
+          </div>
+          <div class="hero-text">
+            <h5>Hola, soy <span class="input">Frontend Developer</span></h5>
+            <h1>Julian Naranjo</h1>
+            <p>
+                Ingeniero de Sistemas con proyectos
+                académicos desarrollados en diversas tecnologías, incluyendo
+                HTML, CSS, JavaScript, Java y Android. Apasionado por la
+                programación y la resolución de problemas, con experiencia en
+                el uso de metodologías ágiles para la gestión de proyectos.
+            </p>
+            <div class="btn-group">
+                <a href="files/HV JANC.pdf" class="btn active" download="CV JANC.pdf">Descargar CV</a>
+                <a href="contact.html" class="btn">Contacto</a>
+            </div>
+            <div class="social">
+                <a href="https://github.com/Juljus-Ing" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/juljus/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://www.instagram.com/ijuljus/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+        var togglebtn = document.querySelector(".togglebtn");
+        var nav = document.querySelector(".navlinks");
+        var links = document.querySelector(".navlinks li");
+
+        togglebtn.addEventListener("click", function(){
+            this.classList.toggle("click");
+            nav.classList.toggle("open");
+        })
+
+        var typed = new Typed(".input", {
+            strings: ["Ingeniero de Sistemas", "Web Developer", "IT Support"],
+            typedSpeed: 70,
+            backSpeed: 55,
+            loop: true
+        }) 
+    </script>
+
+    <!--  <header>
+            <h1>
+                Julian Naranjo Portfolio
+            </h1>
+
+            <nav>
+                <a href="#experiencia">Experiencia</a>
+                <a href="#tecnologias">Tecnologias</a>
+                <a href="#herramientas">Herramientas</a>
+                <a href="#contacto">Contacto</a>
+            </nav>
+        </header>
+        
+        <img id="FotoPersonal" src="/images/FotoBlanco.jpg" alt="Foto de Julian Naranjo con corbata y fondo blanco">
+        <p>
+        Próximo <strong>Ingeniero de Sistemas</strong> | <strong>Desarrollador Web</strong> en formación | <strong>Gamer</strong> en mis ratos libres           
+        </p>
+        <nav class="experiencia" id="experiencia">
+            <h2>Experiencia</h2>
+            <p>No cuento con experiencia formal en ninguna empresa, pero he realizado trabajos académicos y personales.</p>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Java - Android</li>
+            </ul>
+        </nav>
+        <nav class="tecnologias" id="tecnologias">
+            <h2>
+                Tecnologías
+            </h2>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Java</li>
+            </ul>
+        </nav>
+        <nav class="herramientas" id="herramientas">
+            <h2>Herramientas y Cursos</h2>
+            <ul>
+                <li>Excel</li>
+                <li>SCRUM</li>
+            </ul>
+        </nav>
+
+        <section>
+            <h2>Preguntas frecuentes</h2>
+
+            <details>
+                <summary>¿Cuáles son tus hobbies?</summary>
+                <p>
+                    Me encanta programar para proyectos personales y tengo una afición
+                    fuerte con los videojuegos a lo que le he dedicado gran parte de mi
+                    tiempo libre en mi adolescencia y vida universitaria.
+            </details>
+
+        </section>
+
+        <section class="contacto" id="contacto">
+            <h2>Formulario de Contacto</h2>
+            
+            <form action="">
+                <fieldset>
+                    <legend>Información personal</legend>
+
+                    <div>
+                        <label>Nombre:
+                            <input type="text" name="name" placeholder="Julian Andrés" required>
+                        </label>
+                    </div>
+                    <div>
+                        <label>Email:
+                            <input type="email" name="email" placeholder="ejemplo@example.com" required>
+                        </label>
+                    </div>
+                    
+                </fieldset>
+
+                <fieldset>
+                    <legend>Información adicional</legend>
+
+                    <div>
+                        <label>Teléfono
+                            <input type="tel" name="tel" placeholder="1234567890" required>
+                        </label>
+                    </div>
+                </fieldset>
+
+                <input type="submit" value="Enviar contacto">
+            </form>
+
+            <a 
+                href="https://twitch.tv/Juliiusss_"
+                target="_blank"
+                rel="noreferrer"
+            >Twitch</a>
+        </section>
+
+        -->
+  </body>
+</html>
