@@ -10,6 +10,8 @@
     />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.js"></script>
     <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/izitoast/1.4.0/css/iziToast.min.css">
+    <script src="index.js"></script>
     <link rel="icon" href="/images/FotoBlanco.jpg" type="image/jpg" />
     <title>Julian Naranjo's Portfolio</title>
   </head>
@@ -47,18 +49,18 @@
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum nobis dolorem beatae tenetur voluptate libero voluptatem molestiae veniam nostrum, quod consequatur, quae dignissimos et placeat? Facilis doloribus quasi ullam soluta!
             </p>
           </div>
-          <form action="">
+          <form action="" id="contact-form">
             <div class="inputBox">
               <label for="">Nombre: </label>
-              <input type="text" placeholder="Nombre...">
+              <input id="user-name" type="text" placeholder="Nombre...">
             </div>
             <div class="inputBox">
               <label for="">Email: </label>
-              <input type="email" placeholder="Email...">
+              <input id="user-email" type="email" placeholder="Email...">
             </div>
             <div class="inputBox">
               <label for="">Mensaje: </label>
-              <textarea name="" id="" cols="30" rows="5" placeholder="Dejame saber tu inquietud..."></textarea>
+              <textarea name="" id="message" cols="30" rows="5" placeholder="Dejame saber tu inquietud..."></textarea>
             </div>
             <input type="submit" value="Enviar">
           </form>
@@ -85,6 +87,7 @@
 
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <script>
         var togglebtn = document.querySelector(".togglebtn");
         var nav = document.querySelector(".navlinks");
