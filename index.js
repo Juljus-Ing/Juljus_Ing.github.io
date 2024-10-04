@@ -1,4 +1,4 @@
-emailjs.init('mY1lMVNmLYpx_B7fF');
+emailjs.init('pTJ_3uduc2tgAkk67');
 document.getElementById('contact-form').addEventListener('submit', function(event) {
     event.preventDefault();
     //Código para obtener los valores del form
